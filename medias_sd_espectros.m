@@ -43,5 +43,5 @@ for i = 3:length(listaCarpetas) % Empieza desde 3 para evitar '.' y '..'
     % Guardar el valor medio en el nuevo archivo .txt
     save(archivoSalida1,"media","-ascii");
     save(archivoSalida2,"sd","-ascii");
-    save(archivoSalida1,"espectros","-ascii");
+    save(archivoSalida3,"espectros","-ascii");
 end
