@@ -1,5 +1,5 @@
 % Ruta de la carpeta principal
-rutaPrincipal = '/home/david/Documents/Epilepsia/series_resampleadas';
+rutaPrincipal = '/home/david/Documents/Epilepsia/series_epilepticos_resampleadas';
 
 % Obtener la lista de carpetas en la carpeta principal
 listaCarpetas = dir(fullfile(rutaPrincipal, '*'));
@@ -9,7 +9,7 @@ for i = 3:length(listaCarpetas) % Empieza desde 3 para evitar '.' y '..'
     carpetaActual = fullfile(rutaPrincipal, listaCarpetas(i).name);
     
     % Obtener la lista de archivos .txt en la carpeta actual
-    Archivo = dir(fullfile(carpetaActual, '*.txt'));
+    Archivo = dir(fullfile(carpetaActual, '*.hrv'));
     
     archivoActual = fullfile(carpetaActual, Archivo.name);
         
